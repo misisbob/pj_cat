@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Какой ты кот?</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        h1 { text-align: center; }
+        .question { margin-bottom: 20px; }
+        .options { margin-left: 20px; }
+        button { display: block; margin: 20px auto; padding: 10px 20px; }
+        #result { text-align: center; font-size: 1.2em; margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <h1>Тест: Какой ты кот?</h1>
+    <form id="quizForm">
+        <div class="question">
+            <p>1. Что ты предпочитаешь делать в выходные?</p>
+            <div class="options">
+                <label><input type="radio" name="q1" value="lazy"> Спать весь день</label><br>
+                <label><input type="radio" name="q1" value="adventurous"> Исследовать новые места</label><br>
+                <label><input type="radio" name="q1" value="cuddly"> Обниматься с друзьями</label><br>
+                <label><input type="radio" name="q1" value="mischievous"> Разыгрывать шутки</label>
+            </div>
+        </div>
+        <div class="question">
+            <p>2. Как ты относишься к еде?</p>
+            <div class="options">
+                <label><input type="radio" name="q2" value="lazy"> Ем, когда захочу, без суеты</label><br>
+                <label><input type="radio" name="q2" value="adventurous"> Пробую новые блюда</label><br>
+                <label><input type="radio" name="q2" value="cuddly"> Делюсь с близкими</label><br>
+                <label><input type="radio" name="q2" value="mischievous"> Краду со стола</label>
+            </div>
+        </div>
+        <div class="question">
+            <p>3. Твоя реакция на незнакомца?</p>
+            <div class="options">
+                <label><input type="radio" name="q3" value="lazy"> Игнорирую и продолжаю дремать</label><br>
+                <label><input type="radio" name="q3" value="adventurous"> Подхожу и обнюхиваю</label><br>
+                <label><input type="radio" name="q3" value="cuddly"> Иду на контакт и ластюсь</label><br>
+                <label><input type="radio" name="q3" value="mischievous"> Пытаюсь напугать</label>
+            </div>
+        </div>
+        <div class="question">
+            <p>4. Что ты делаешь с игрушками?</p>
+            <div class="options">
+                <label><input type="radio" name="q4" value="lazy"> Лежу рядом и смотрю</label><br>
+                <label><input type="radio" name="q4" value="adventurous"> Гоняюсь и ловлю</label><br>
+                <label><input type="radio" name="q4" value="cuddly"> Делю с другими</label><br>
+                <label><input type="radio" name="q4" value="mischievous"> Разбрасываю по дому</label>
+            </div>
+        </div>
+        <div class="question">
+            <p>5. Твоё любимое место в доме?</p>
+            <div class="options">
+                <label><input type="radio" name="q5" value="lazy"> Кровать или диван</label><br>
+                <label><input type="radio" name="q5" value="adventurous"> Окно с видом на улицу</label><br>
+                <label><input type="radio" name="q5" value="cuddly"> Рядом с хозяином</label><br>
+                <label><input type="radio" name="q5" value="mischievous"> В шкафу или под кроватью</label>
+            </div>
+        </div>
+        <div class="question">
+            <p>6. Как ты спишь?</p>
+            <div class="options">
+                <label><input type="radio" name="q6" value="lazy"> Долго и крепко</label><br>
+                <label><input type="radio" name="q6" value="adventurous"> В разных позах и местах</label><br>
+                <label><input type="radio" name="q6" value="cuddly"> Свернувшись клубочком с кем-то</label><br>
+                <label><input type="radio" name="q6" value="mischievous"> Просыпаюсь по ночам для шалостей</label>
+            </div>
+        </div>
+        <div class="question">
+            <p>7. Твоя реакция на дождь?</p>
+            <div class="options">
+                <label><input type="radio" name="q7" value="lazy"> Остаюсь внутри и сплю</label><br>
+                <label><input type="radio" name="q7" value="adventurous"> Выбегаю поиграть в лужах</label><br>
+                <label><input type="radio" name="q7" value="cuddly"> Ищу укрытие с компанией</label><br>
+                <label><input type="radio" name="q7" value="mischievous"> Брызгаю водой на других</label>
+            </div>
+        </div>
+        <div class="question">
+            <p>8. Что ты думаешь о ванне?</p>
+            <div class="options">
+                <label><input type="radio" name="q8" value="lazy"> Избегаю любой ценой</label><br>
+                <label><input type="radio" name="q8" value="adventurous"> Плаваю с удовольствием</label><br>
+                <label><input type="radio" name="q8" value="cuddly"> Только если с кем-то</label><br>
+                <label><input type="radio" name="q8" value="mischievous"> Брызгаюсь и убегаю</label>
+            </div>
+        </div>
+        <div class="question">
+            <p>9. Твоё отношение к другим животным?</p>
+            <div class="options">
+                <label><input type="radio" name="q9" value="lazy"> Игнорирую их</label><br>
+                <label><input type="radio" name="q9" value="adventurous"> Играю и исследую вместе</label><br>
+                <label><input type="radio" name="q9" value="cuddly"> Дружу и обнимаюсь</label><br>
+                <label><input type="radio" name="q9" value="mischievous"> Дразню и провоцирую</label>
+            </div>
+        </div>
+        <div class="question">
+            <p>10. Что ты делаешь, когда скучно?</p>
+            <div class="options">
+                <label><input type="radio" name="q10" value="lazy"> Сплю</label><br>
+                <label><input type="radio" name="q10" value="adventurous"> Ищу приключения</label><br>
+                <label><input type="radio" name="q10" value="cuddly"> Ищу компанию</label><br>
+                <label><input type="radio" name="q10" value="mischievous"> Устраиваю беспорядок</label>
+            </div>
+        </div>
+        <button type="button" id="submitButton">Узнать результат</button>
+    </form>
+    <div id="result"></div>
+</body>
+</html>
