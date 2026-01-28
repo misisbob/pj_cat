@@ -1,0 +1,90 @@
+body {
+    background-color: #E0F7FA;
+    font-family: Arial, sans-serif;
+    color: #01579B;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background-color: #B3E5FC;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #0277BD;
+}
+
+.intro {
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.intro label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1.1em;
+    color: #0277BD;
+}
+
+.intro input {
+    width: 70%;
+    max-width: 400px;
+    padding: 10px;
+    font-size: 1.1em;
+    border: 2px solid #81D4FA;
+    border-radius: 6px;
+    background-color: white;
+}
+
+.intro input:focus {
+    outline: none;
+    border-color: #0288D1;
+}
+
+.question {
+    margin-bottom: 20px;
+    background-color: #E1F5FE;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+label {
+    display: block;
+    margin: 8px 0;
+    color: #0288D1;
+    cursor: pointer;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    background-color: #03A9F4;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #0288D1;
+}
+
+.result {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #81D4FA;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.35em;
+    color: #004D40;
+    line-height: 1.45;
+}
